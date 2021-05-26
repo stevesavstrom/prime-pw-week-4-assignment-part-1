@@ -157,7 +157,7 @@ console.log('Test - should show empty array:',getPositives( otherNumbers )); // 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
-console.log('***** Problem #10 *****')
+console.log('***** Problem #11 *****')
 
 // From Edabit: https://edabit.com/challenge/4gzDuDkompAqujpRi
 // Add up the Numbers from a Single Number
