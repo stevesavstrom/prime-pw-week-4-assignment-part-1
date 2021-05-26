@@ -66,6 +66,7 @@ console.log( 'isPositive - should say true', isPositive(35) );
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
+// This helped me: https://flaviocopes.com/how-to-get-last-item-array-javascript/
 console.log('***** Problem #6 *****')
 
 let teas = ['Green', 'Hibiscus', 'Oolong', 'Chamomile']
@@ -93,7 +94,7 @@ function find( value, array ){
   }
 }
     return false;
-  }
+}
   console.log( 'Test - should say true', find(93, array) );
   console.log( 'Test - should say false', find(100, array) );
 
@@ -117,7 +118,7 @@ console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 // 9. Function to return the sum of all numbers in an array
 console.log('***** Problem #9 *****')
 
-let numbers = [5, 20, 31];
+let numbers = [5, 5, 20, 31, 43];
 
 function sumAll( ) {
   let sum = 0
@@ -128,13 +129,13 @@ function sumAll( ) {
   return sum;
 }
 
-console.log( 'Test - should say 56:', sumAll( numbers) );
+console.log( 'Test - should say 104:', sumAll( numbers) );
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
-// I used this an example: https://stackoverflow.com/questions/44950233/javascript-get-only-negative-numbers-form-array
+// I used this as an example: https://stackoverflow.com/questions/44950233/javascript-get-only-negative-numbers-form-array
 console.log('***** Problem #10 *****')
 
 let someNumbers = [17, -5, 0, 11, 2, -67, 8, 11, -24 ];
