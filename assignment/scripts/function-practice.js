@@ -16,12 +16,14 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 console.log('***** Problem #2 *****')
-function helloName( Steve ) {
+function helloName( name ) { // added name paramter
   console.log('in helloName');
-  return 'Hello, Steve';
+  return 'Hello, ' + name + '!';
 }
-// Remember to call the function to test
-console.log('Test - should say "Hello, Steve":', helloName());
+// Testing a different names
+console.log('Test - should say "Hello, Steve!":', helloName('Steve'));
+console.log('Test - should say "Hello, Edan!":', helloName('Edan'));
+console.log('Test - should say "Hello, Chad!":', helloName('Chad'));
 
 // 3. Function to add two numbers together & return the result
 console.log('***** Problem #3 *****')
@@ -70,15 +72,18 @@ console.log( 'isPositive - should say true', isPositive(35) );
 console.log('***** Problem #6 *****')
 
 let teas = ['Green', 'Hibiscus', 'Oolong', 'Chamomile']
+//added coffees array so that I can test function with different inputs.
+let coffees = ['Ethiopian', 'Colombian', 'Vietnamese', 'Brazilian']
 const lastItem = teas[teas.length - 1]
 
-function getLast(){
+function getLast( array ){ // fixed to add array paramater
     console.log('in getLast');
-    const lastItem = teas[teas.length - 1]
+    const lastItem = array[array.length - 1]
     return lastItem;
 }
 
-console.log('Test - should say Chamomile:', getLast());
+console.log('Test - should say Chamomile:', getLast(teas));
+console.log('Test - should say Brazilian:', getLast(coffees));
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
